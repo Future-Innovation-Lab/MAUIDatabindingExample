@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:store="clr-namespace:Elephants"
+             x:Class="Elephants.ElephantDetailPage"
+             Title="{Binding Elephant.Name}" >
+    <VerticalStackLayout>
+        <Image  HeightRequest="300" WidthRequest="300" Aspect="AspectFill" HorizontalOptions="Center" Source="{Binding Elephant.ImageUrl}"/>
+        <Label  Margin="10" Text="{Binding Elephant.Name}" FontAttributes="Bold" FontSize="Large" />
+        <Label  Margin="10" Text="{Binding Elephant.Location}"/>
+        <Label  Margin="10" Text="{Binding Elephant.Details}"/>
+    </VerticalStackLayout>
+</ContentPage>
